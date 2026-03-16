@@ -4,7 +4,7 @@ import "../styles/LocationCard.css"
 
 function LocationCard({ slug, name }) {
     return (
-        <Link to={`/location/${slug}`}>
+        <Link to={`/locations/${slug}`}>
             <div className="location-container">
                 <h2>{name}</h2>
             </div>
