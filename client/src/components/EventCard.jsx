@@ -1,10 +1,22 @@
 import react from "react";
 
-function EventCard() {
+function EventCard({ event }) {
+    const { title, artist, date, description, location } = event
+
     return (
-        <h1>
-            Hello
-        </h1>
+        <div className="event-container">
+            <div className="title-container">
+                <span>{title}</span>
+            </div>
+            <div className="info-container">
+                <div className='inner-info'>
+                    <span>{date}</span>
+                    <span>{location}</span>
+                    <span>{artist}</span>
+                </div>
+                <span>{description}</span>
+            </div>
+        </div>
     )
 }
 

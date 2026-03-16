@@ -15,7 +15,6 @@ function LocationPage() {
                 const res = await fetch(`http://localhost:3000/events/${location}`)
                 const data = await res.json()
                 setEvents(data);
-                console.log(data);
             } catch (err) {
                 console.log(err)
             }
