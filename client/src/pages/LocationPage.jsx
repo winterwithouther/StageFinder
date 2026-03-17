@@ -1,8 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom' 
+import { Link, useParams } from 'react-router-dom' 
 import { useState, useEffect } from 'react'
 
 import EventCard from "../components/EventCard.jsx"
+import "../styles/LocationPage.css"
 
 function LocationPage() {
     const { location } = useParams()
@@ -25,9 +26,14 @@ function LocationPage() {
 
     return (
         <div>
-            {events.map((event) => (
-                <EventCard key={event.id} event={event}/>
-            ))}
+            <Link to="/" className="home-button">
+                Home
+            </Link>
+            <div className="events">
+                {events.map((event) => (
+                    <EventCard key={event.id} event={event}/>
+                ))}
+            </div>
         </div>
     )
 }   

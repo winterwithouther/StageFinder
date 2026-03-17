@@ -4,20 +4,17 @@
 }
 
 .location-card {
-    background: #ffffff;
-    padding: 3.5rem;
-    border-radius: 14px;
-    text-align: center;
-    border: 2px solid black;
-
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
-    transition: all 0.25s ease;
-    cursor: pointer;
+  background: #02042b;
+  padding: 3.5rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.171);
+  transition: ease .2s;
+  cursor: pointer;
 }
 
 .location-card:hover {
-    background-color: black;
-    color: white;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .location-card h2 {

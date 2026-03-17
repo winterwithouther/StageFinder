@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(5deg, rgb(200, 200, 200), #f8fafc);
-    color: #0f172a;
+    font-family: "Bitter", sans-serif;
+    background: rgb(42, 28, 68);
+    color: #ffffff;
     min-height: 100vh;
 }
 

@@ -1,4 +1,5 @@
 import react from "react";
+import "../styles/EventCard.css"
 
 function EventCard({ event }) {
     const { title, artist, date, description, location } = event
@@ -10,14 +11,14 @@ function EventCard({ event }) {
             </div>
             <div className="info-container">
                 <div className='inner-info'>
-                    <span>{date}</span>
-                    <span>{location}</span>
-                    <span>{artist}</span>
+                    <span>Date: {date}</span>
+                    <span>Location: {location}</span>
+                    <span>Artist: {artist}</span>
                 </div>
                 <span>{description}</span>
             </div>
         </div>
-    ) 
+    )
 }
 
 export default EventCard
