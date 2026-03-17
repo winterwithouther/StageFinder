@@ -17,7 +17,7 @@ function EventCard({ event }) {
                 <span>{description}</span>
             </div>
         </div>
-    )
+    ) 
 }
 
 export default EventCard

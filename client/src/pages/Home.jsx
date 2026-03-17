@@ -11,9 +11,9 @@ function Home() {
     ]
 
     return (
-        <div>
+        <div className="homepage-container">
             <Header/>
-            <div>
+            <div className="locations-container">
                 {locations.map((location) => (
                     <LocationCard key={location.slug} slug={location.slug} name={location.name}/>
                 ))}
