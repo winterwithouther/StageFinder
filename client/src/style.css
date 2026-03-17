@@ -18,9 +18,13 @@ body {
 
 .homepage-container {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .locations-container {
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
